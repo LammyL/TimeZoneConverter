@@ -1,12 +1,14 @@
-TimeZoneConverter  [![NuGet Version](https://img.shields.io/nuget/v/TimeZoneConverter.svg?style=flat)](https://www.nuget.org/packages/TimeZoneConverter/) 
-=================
+TimeZoneConverter.StrongName  [![NuGet Version](https://img.shields.io/nuget/v/TimeZoneConverter.svg?style=flat)](https://www.nuget.org/packages/TimeZoneConverter.StrongName/) 
+============================
 
 Lightweight library to convert quickly between IANA, Windows, and Rails time zone names.
+
+This is a fork of [TimeZoneConverter][8] assembly that signs the assembly with a strong name.  This fork will pull changes from upstream and publish an identical strong-named version.
 
 ## Installation
 
 ```powershell
-PM> Install-Package TimeZoneConverter
+PM> Install-Package TimeZoneConverter.StrongName
 ```
 
 This library is targeting .NET Standard 2.0, 1.3, 1.1, and .NET 4.5.
@@ -105,3 +107,4 @@ This library is provided free of charge, under the terms of the [MIT license][7]
 [5]: https://github.com/rails/rails/blob/master/activesupport/lib/active_support/values/time_zone.rb
 [6]: https://github.com/dotnet/corefx/issues/11897
 [7]: https://raw.githubusercontent.com/mj1856/TimeZoneConverter/master/LICENSE.txt
+[8]: https://raw.githubusercontent.com/mj1856/TimeZoneConverter/
