@@ -4,14 +4,14 @@
     <Description>Lightweight library to convert quickly between Windows time zone IDs and IANA Time Zone names.
 This is a fork that strong names the TimeZoneConverter assembly from https://github.com/mj1856/TimeZoneConverter.</Description>
     <Authors>Matt Johnson</Authors>
-    <TargetFrameworks>netstandard2.0;netstandard1.3;netstandard1.1;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard1.3;netstandard1.1;net45;net40;net35</TargetFrameworks>
     <PackageId>TimeZoneConverter.StrongName</PackageId>
     <PackageTags>timezone;time;zone;time zone;iana;tzdb;olson;timezoneinfo,rails</PackageTags>
     <PackageProjectUrl>https://github.com/LammyL/TimeZoneConverter</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/LammyL/TimeZoneConverter/master/LICENSE.txt</PackageLicenseUrl>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
-    <Version>2.2.1</Version>
+    <Version>2.3.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
@@ -30,6 +30,10 @@ This is a fork that strong names the TimeZoneConverter assembly from https://git
   <ItemGroup>
     <EmbeddedResource Include="Data\*" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35'">$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
+  </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='net45'">
     <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />

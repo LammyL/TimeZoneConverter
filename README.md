@@ -11,7 +11,7 @@ This is a fork of [TimeZoneConverter][8] assembly that signs the assembly with a
 PM> Install-Package TimeZoneConverter.StrongName
 ```
 
-This library is targeting .NET Standard 2.0, 1.3, 1.1, and .NET 4.5.
+This library is targeting .NET Standard 2.0, 1.3, 1.1, and .NET Framework 4.5, 4.0 and 3.5.
 See the [.NET Standard Platform Support Matrix][1] for further details.
 
 ## Notes
