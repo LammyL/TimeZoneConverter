@@ -11,7 +11,7 @@ This is a fork that strong names the TimeZoneConverter assembly from https://git
     <PackageLicenseUrl>https://raw.githubusercontent.com/LammyL/TimeZoneConverter/master/LICENSE.txt</PackageLicenseUrl>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
-    <Version>2.3.0</Version>
+    <Version>2.3.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
